@@ -4,15 +4,18 @@ import React from 'react';
 import {View, Text, StyleSheet, Button, Platform} from 'react-native';
 
 const Feed =({navigation}) => {
+
+    
+
         return (
         <View style={styles.container}>
             <Text>This is the feed screen</Text>
            <Button
                     title="Go to Profile"
-                    onPress={() => navigation.navigate('Profile')}
+                    onPress={() => navigation.navigate('Ryul_Portfolio')}
             />
 
-
+            
         </View>
         )
 }

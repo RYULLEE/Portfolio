@@ -66,7 +66,7 @@ const App=() => {
   const Container = createAppContainer(TestStack);
   
     return(
-      <View style={{flex:1}}>
+      <View style={{flex:1, backgroundColor : '#fff'}}>
         
         
         <Container/>

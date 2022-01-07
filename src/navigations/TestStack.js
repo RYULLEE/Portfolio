@@ -10,10 +10,21 @@ const TestStack = createStackNavigator(
     {
         Home: Home,
         Feed: Feed,
-        Profile : Profile,
+        Ryul_Portfolio : Profile,
     },
     {
-        initialRouteName: 'Profile'
+        initialRouteName: 'Ryul_Portfolio',
+        screenOptions: {
+            headerStyle: {
+              elevation: 0,
+              shadowOpacity: 0,
+              
+            },
+            headerTitle: '회원가입',
+          },
+          options : {
+            headerTitle: '회원가입',
+          }
     }
 );
 
