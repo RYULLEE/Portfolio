@@ -1,7 +1,9 @@
-import React from 'react';
+import React,{Component, useLayoutEffect} from 'react';
 import { Dimensions, Platfrom, ScrollView } from 'react-native';
-import { Button,useWindowDimensions, TouchableOpacity, Image, View, Text, SafeAreaView, StyleSheet, FlatList, Animated, Touchable } from 'react-native';
+import { Button,useWindowDimensions, TouchableOpacity, Image, View, Text,StyleSheet, FlatList, Animated, Touchable } from 'react-native';
 import { useState, useEffect } from 'react';
+import {createStackNavigator} from 'react-navigation-stack';
+import {createAppContainer} from 'react-navigation';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { 
     NotoSansKR_100Thin,
@@ -11,25 +13,27 @@ import {
     NotoSansKR_700Bold,
     NotoSansKR_900Black 
   } from '@expo-google-fonts/noto-sans-kr';
+
 import {useFonts} from 'expo-font';
 import { AppLoading } from 'expo';
-//import { NavigationContainer } from '@react-navigation/native';
-//import MainStack from './navigations/MainStack';
-//import { ClassicHeader } from "@freakycoder/react-native-header-view";
-//import { AppleHeader } from "@freakycoder/react-native-header-view";
-
-import ModernHeader from "react-native-modern-header";
-import ElegantHeader from "react-native-elegant-header";
+import Home from './screens/Home';
+import Home2 from './screens/Home2';
 
 import { SwiperFlatList } from 'react-native-swiper-flatlist';
 import { TabView, SceneMap } from 'react-native-tab-view';
+import Stack1 from './navigations/MainStack';
+import TestStack from './navigations/TestStack';
+import Profile from './screens/Profile';
+import Feed from './screens/Feed';
 
 const FirstRoute = () => (
-    <View style={{  backgroundColor: '#ff4081', height : 1000, width : wp('100%') }} />
+    <ScrollView style={{  backgroundColor: '#ff4081', height : 1000, width : wp('100%') }} >
+        <Text>1111</Text>
+    </ScrollView>
   );
   
   const SecondRoute = () => (
-    <View style={{  backgroundColor: '#673ab7',height : 1000 , width : wp('100%') }} />
+    <ScrollView style={{  backgroundColor: '#673ab7',height : 1000 , width : wp('100%') }} />
   );
   
   const renderScene = SceneMap({
@@ -58,60 +62,19 @@ const App=() => {
     { key: 'first', title: 'First' },
     { key: 'second', title: 'Second' },
   ]);
+
+  const Container = createAppContainer(TestStack);
   
     return(
-        <SafeAreaView>
-            <View style={styles.top_bar} >
-            <TouchableOpacity>
-            <Text style={styles.logo_text}>
-                RYUL's Portfolio
-            </Text>
-            </TouchableOpacity>
-        </View>
-        <ScrollView>
-
+      <View style={{flex:1}}>
         
         
-        <TabView
-      navigationState={{ index, routes }}
-      renderScene={renderScene}
-      onIndexChange={setIndex}
-    />
-
-        <View style={{width : wp('100%'), height : 400,}}>
-        <SwiperFlatList  showPagination>
-            <View style={ { backgroundColor: 'red', width : wp('100%') }}>
-                <Text >1</Text>
-            </View>
-            <View style={ { backgroundColor: 'blue',width : wp('100%') }}>
-                <Text >1</Text>
-            </View>
-            <View style={ { backgroundColor: 'green',width : wp('100%') }}>
-                <Text >1</Text>
-            </View>
-        </SwiperFlatList>
-        </View>
+        <Container/>
         
-        <View style={styles.box_2}>
-            <View style={styles.box_2_title}>
-                <Text style={styles.box_2_title_text}>
-                    ABOUT ME
-                </Text>
-            </View>
-            <Image
-                style={{height:wp('100%')/8 , width: wp('100%')/8/10*7.78,}}
-                source={require('./image/self_image.png')}
-          />
-
-
-        </View>
-
-        <TouchableOpacity  >
-            <Text>맨 위로 이동</Text>
-        </TouchableOpacity>
-
-        </ScrollView>
-        </SafeAreaView>
+        
+        
+      </View>
+      
     );
 }
 
@@ -131,9 +94,9 @@ const styles = StyleSheet.create({
       justifyContent : 'center',
       width : wp('100%'),
       height : 70,
-      position: 'absolute',
+      //position: 'absolute',
       
-      zIndex: 1,
+      //zIndex: 1,
     },
     logo_text : {
       fontFamily: 'NotoSansKR_700Bold',

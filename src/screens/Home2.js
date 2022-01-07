@@ -1,41 +1,89 @@
-import React from 'react';
+import React,{Component, useLayoutEffect} from 'react';
 import { Dimensions, Platfrom, ScrollView } from 'react-native';
-import { Button,useWindowDimensions, TouchableOpacity, Image, View, Text, SafeAreaView, StyleSheet, FlatList, Animated, Touchable } from 'react-native';
+import { Button,useWindowDimensions, TouchableOpacity, Image, View, Text,StyleSheet, FlatList, Animated, Touchable } from 'react-native';
 import { useState, useEffect } from 'react';
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import { SwiperFlatList } from 'react-native-swiper-flatlist';
+import { TabView, SceneMap } from 'react-native-tab-view';
+
+const FirstRoute = () => (
+    <ScrollView style={{  backgroundColor: '#ff4081', height : 1000, width : wp('100%') }} >
+        <Text>111111</Text>
+    </ScrollView>
+  );
+  
+  const SecondRoute = () => (
+    <ScrollView style={{  backgroundColor: '#673ab7',height : 1000 , width : wp('100%') }} />
+  );
+  
+  const renderScene = SceneMap({
+    first: FirstRoute,
+    second: SecondRoute,
+  });
+
+
 
 const Home2 = () => {
 
+  const [index, setIndex] = React.useState(0);
+  const [routes] = React.useState([
+    { key: 'first', title: 'First' },
+    { key: 'second', title: 'Second' },
+  ]);
+
+
     return (
-        <SafeAreaView>
-        <ScrollView>
-        <View style={styles.top_bar}>
-            <TouchableOpacity>
-            <Text style={styles.logo_text}>
-                RYUL's Portfolio22222222222222222222222222222
-            </Text>
-            </TouchableOpacity>
-        </View>
+      
+            
+      <ScrollView>
+         <View style={styles.top_bar} >
+          <TouchableOpacity>
+          <Text style={styles.logo_text}>
+              RYUL's Portfolio2222222222222222222222222222222222
+          </Text>
+          </TouchableOpacity>
+      </View>
 
-        <View style={styles.box_1}>
+      <TabView
+        navigationState={{ index, routes }}
+        renderScene={renderScene}
+        onIndexChange={setIndex}
+      />
 
-        </View>
+      <View style={{width : wp('100%'), height : 400,}}>
+      <SwiperFlatList  showPagination>
+          <View style={ { backgroundColor: 'red', width : wp('100%') }}>
+              <Text >1</Text>
+          </View>
+          <View style={ { backgroundColor: 'blue',width : wp('100%') }}>
+              <Text >1</Text>
+          </View>
+          <View style={ { backgroundColor: 'green',width : wp('100%') }}>
+              <Text >1</Text>
+          </View>
+      </SwiperFlatList>
+      </View>
 
-        <View style={styles.box_2}>
-            <View style={styles.box_2_title}>
-                <Text style={styles.box_2_title_text}>
-                    ABOUT ME2222222222222222222222222222
-                </Text>
-            </View>
-            <Image
-                style={{height:wp('100%')/8 , width: wp('100%')/8/10*7.78,}}
-                source={require('../image/self_image.png')}
-          />
+      <View style={styles.box_2}>
+          <View style={styles.box_2_title}>
+              <Text style={styles.box_2_title_text}>
+                  ABOUT ME
+              </Text>
+          </View>
+          <Image
+              style={{height:wp('100%')/8 , width: wp('100%')/8/10*7.78,}}
+              source={require('../image/self_image.png')}
+        />
 
 
-        </View>
+      </View>
+
+      <TouchableOpacity  >
+          <Text>맨 위로 이동</Text>
+      </TouchableOpacity>
 
         </ScrollView>
-        </SafeAreaView>
+      
     );
 };
 
