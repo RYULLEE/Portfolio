@@ -10,11 +10,12 @@ const Aboutme = ({navigation}) => {
         <ScrollView>
             <View style={styles.large_container}>
                 
-
+                <TouchableOpacity>
                 <Image
                 style={{height:wp('100%')/6 , width: wp('100%')/6/10*7.78,marginBottom : 40,}}
                 source={require('../image/self_image.png')}
                 />
+                </TouchableOpacity>
 
                 <Image
                     style={{ width: wp('60%'), height:wp('60%')/58.6*12 ,}}

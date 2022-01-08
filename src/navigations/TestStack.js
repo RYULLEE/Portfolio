@@ -6,6 +6,9 @@ import Profile from "../screens/Profile";
 import Home from '../screens/Home';
 import Aboutme from '../screens/Aboutme';
 import Skills from '../screens/Skills';
+import Snap from '../screens/Snap';
+import Card from '../screens/Card';
+import PageSnap from '../screens/PageSnap';
 
 const TestStack = createStackNavigator(
     {
@@ -14,6 +17,10 @@ const TestStack = createStackNavigator(
         Ryul_Portfolio : Profile,
         Aboutme : Aboutme,
         Skills : Skills,
+        Snap : Snap,
+        Card : Card,
+        PageSnap : PageSnap,
+        
     },
     {
         initialRouteName: 'Ryul_Portfolio',

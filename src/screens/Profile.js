@@ -34,15 +34,15 @@ const Profile = ({navigation}) => {
             </View>
 
             <View style={styles.right_large_box}>
-                <TouchableOpacity>
-                <View style={styles.box_3}>
+                <TouchableOpacity onPress={() => navigation.navigate('Card')}> 
+                <View style={styles.box_3} >
                     <Text>3</Text>
                 </View>
                 </TouchableOpacity>
 
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('Snap')}>
                 <View style={styles.box_4}>
-                    <Text>3</Text>
+                    <Text>4</Text>
                 </View>
                 </TouchableOpacity>
             </View>
@@ -134,6 +134,7 @@ const styles = StyleSheet.create({
         height : hp('47%'),
         borderRadius : 20,
     },
+    
       
 
 });
