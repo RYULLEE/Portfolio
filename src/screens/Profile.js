@@ -3,6 +3,7 @@
 import React from 'react';
 import { Button,useWindowDimensions, TouchableOpacity, Image, View, Text,StyleSheet, FlatList, Animated, Touchable } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import { Dimensions, Platfrom, ScrollView } from 'react-native';
 
 const Profile = ({navigation}) => {
         return (
@@ -17,13 +18,13 @@ const Profile = ({navigation}) => {
 
                 <TouchableOpacity>
                 <View style={styles.box_2}>
-                    <TouchableOpacity onPress={() => navigation.navigate('Feed')}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Aboutme')}>
                     <View style={styles.box_2_1}>
                         <Text>2_1</Text>
                     </View>
                     </TouchableOpacity>
 
-                    <TouchableOpacity onPress={() => navigation.navigate('Feed')}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Skills')}>
                     <View style={styles.box_2_2}>
                         <Text>2_2</Text>
                     </View>

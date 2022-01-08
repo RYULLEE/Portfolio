@@ -4,13 +4,16 @@ import {createAppContainer} from 'react-navigation';
 import Feed from "../screens/Feed";
 import Profile from "../screens/Profile";
 import Home from '../screens/Home';
-
+import Aboutme from '../screens/Aboutme';
+import Skills from '../screens/Skills';
 
 const TestStack = createStackNavigator(
     {
         Home: Home,
         Feed: Feed,
         Ryul_Portfolio : Profile,
+        Aboutme : Aboutme,
+        Skills : Skills,
     },
     {
         initialRouteName: 'Ryul_Portfolio',
