@@ -8,7 +8,9 @@ import Aboutme from '../screens/Aboutme';
 import Skills from '../screens/Skills';
 import Snap from '../screens/Snap';
 import Card from '../screens/Card';
-import PageSnap from '../screens/PageSnap';
+//import PageSnap from '../screens/PageSnap';
+import Projects_info from '../screens/Projects_intro';
+import Projects_1 from '../screens/Projects_1';
 
 const TestStack = createStackNavigator(
     {
@@ -19,7 +21,8 @@ const TestStack = createStackNavigator(
         Skills : Skills,
         Snap : Snap,
         Card : Card,
-        PageSnap : PageSnap,
+        Projects_info : Projects_info,
+        Projects_1 : Projects_1,
         
     },
     {

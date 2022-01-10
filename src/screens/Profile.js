@@ -40,7 +40,7 @@ const Profile = ({navigation}) => {
                 </View>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={() => navigation.navigate('Snap')}>
+                <TouchableOpacity onPress={() => navigation.navigate('Projects_info')}>
                 <View style={styles.box_4}>
                     <Text>4</Text>
                 </View>
