@@ -64,7 +64,7 @@ const Projects_info =({navigation})=> {
                       
                       </TouchableOpacity>
                       
-                      <TouchableOpacity  onPress={() => navigation.navigate('Skills')} style={styles.card_2} >
+                      <TouchableOpacity  onPress={() => navigation.navigate('Projects_2')} style={styles.card_2} >
                       
                           
                           <Image

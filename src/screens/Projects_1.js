@@ -17,33 +17,26 @@ const Projects_1 = ({navigation}) => {
 
     <View style={styles.large_container} onLayout={onLayout}>
         
-              <View style={{width : parentWidth/3}}>
+              <View style={{width : parentWidth/3, height : 500,}}>
+              
                   <Swiper
-                    from={0}
-                    minDistanceForAction={0.1}
-                    controlsProps={{
-                      dotsTouchable: true,
-                      prevPos: 'left',
-                      nextPos: 'right',
-                      nextTitle: '>',
-                      nextTitleStyle: { color: 'black', fontSize: 30, fontWeight: '700' },
-                      PrevComponent: ({ onPress }) => (
-                        <TouchableOpacity onPress={onPress} >
-                          <Text style={{ color: 'gray', fontSize: 30, fontWeight: '700' }}>
-                            {'<'}
-                          </Text>
-                         
-                        </TouchableOpacity>
-                        
-                      ),
-                    }}
+                  
                   >
-                   
+                      
+                      <TouchableOpacity style={styles.card} >
+                          <Image
+                                style={{ flex:1, width : wp('20%')}}
+                                resizeMode="contain"
+                                source={require('../image/ward_1.png')}
+                            />
+                            
+                      </TouchableOpacity>
+
                       <TouchableOpacity style={styles.card} >
                           <Image
                                 style={{ width : wp('20%'),  flex:1,}}
                                 resizeMode="contain"
-                                source={require('../image/ward_1.png')}
+                                source={require('../image/ward_2.png')}
                             />
                       </TouchableOpacity>
 
@@ -51,7 +44,15 @@ const Projects_1 = ({navigation}) => {
                           <Image
                                 style={{ width : wp('20%'),  flex:1,}}
                                 resizeMode="contain"
-                                source={require('../image/ward_1.png')}
+                                source={require('../image/ward_3.png')}
+                            />
+                      </TouchableOpacity>
+
+                      <TouchableOpacity style={styles.card} >
+                          <Image
+                                style={{ width : wp('20%'),  flex:1,}}
+                                resizeMode="contain"
+                                source={require('../image/ward_4.png')}
                             />
                       </TouchableOpacity>
                       
@@ -106,29 +107,23 @@ large_container: {
         //justifyContent : 'center',
         alignItems : 'center',
         backgroundColor : 'blue',
-        
+        flexDirection : 'row',
 
     },
 
     card : {
-        flex:1,
+        //flex:1,
+        
         alignItems:"center",
         justifyContent:"space-evenly",
         backgroundColor:"white",
         borderWidth : 4,
-        borderColor : '#61210B',
+        borderColor : 'black',
         borderRadius : 15,
+        zIndex : 10,
+        height : 500,
       },
-      card_2 : {
-        flex:1,
-        alignItems:"center",
-        justifyContent:"space-evenly",
-        backgroundColor:"white",
-        borderWidth : 4,
-        borderColor : '#0B6138',
-        borderRadius : 15,
-      },
-  
+      
       title : {
           
         fontFamily: 'NotoSansKR_700Bold',
