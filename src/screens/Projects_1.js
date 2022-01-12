@@ -134,9 +134,65 @@ const Projects_1 = ({navigation}) => {
                 
                 </View>
 
-                <View style={{width : parentWidth/3, height : 500, backgroundColor : 'red'}}>
-                    
+                <View style={{borderWidth : 2, marginTop : 20, borderRadius : 10, borderColor : '#3B240B'}}>
+                <View style={{width : parentWidth/3,  flexDirection : 'row', marginTop : 20}}>
+                    <View style={{flex:1, }}>
+                        <Text style={styles.text_left}>• 주요 기능</Text>                        
+                    </View>
+                    <View style={{flex:2, }}>
+                        <Text style={styles.text_left_2}>1. 종목 Tier System ( 가까운 미래에 상승확률이 높은 종목"군" 을 추천
+                              {'\n'}2. 기술적 분석 점수화 ( 기술적 분석 결과를 100점 만점 점수로 표현 )
+                              {'\n'}3. 게임처럼 다양한 주식 분석툴 제공 ( 유사도 점수, 포트폴리오 진단, 테마주 새롭게 정의 )
+                        </Text>
+                    </View>
                 </View>
+
+                <View style={{width : parentWidth/3, flexDirection : 'row'}}>
+                    <View style={{flex:1, }}>
+                        <Text style={styles.text_left}>• GitHub</Text>                        
+                    </View>
+                    <View style={{flex:2, }}>
+                        <Text style={styles.text_left_2}>
+                        https://github.com/RYULLEE/WARD_react-native_frontend
+                        </Text> 
+                    </View>
+                </View>
+
+                <View style={{width : parentWidth/3, flexDirection : 'row'}}>
+                    <View style={{flex:1, }}>
+                        <Text style={styles.text_left}>• App File</Text>                        
+                    </View>
+                    <View style={{flex:2, }}>
+                        <Text style={styles.text_left_2}>
+                        https://drive.google.com/file/d/1OlQv89etIYWWkmWWknG5O1kmQdbU_-6N/view?usp=sharing
+                        </Text> 
+                    </View>
+                </View>
+
+                <View style={{width : parentWidth/3,  flexDirection : 'row'}}>
+                    <View style={{flex:1,}}>
+                        <Text style={styles.text_left}>• Front-end</Text>                        
+                    </View>
+                    <View style={{flex:2, }}>
+                        <Text style={styles.text_left_2}>
+                        React-native
+                        </Text> 
+                    </View>
+                </View>
+                
+                <View style={{width : parentWidth/3,  flexDirection : 'row'}}>
+                    <View style={{flex:1, }}>
+                        <Text style={styles.text_left}>• Back-end</Text>                        
+                    </View>
+                    <View style={{flex:2,}}>
+                        <Text style={styles.text_left_2}>
+                        Google Firebase
+                        </Text> 
+                    </View>
+                </View>
+                </View>
+
+
             </View>
 
             <View style={{alignItems : 'center',
@@ -160,8 +216,9 @@ const Projects_1 = ({navigation}) => {
                     19년도 겨울, KAIST 앱 창업대회에서 기획을 준비하여 20년도 초 E5 KAIST 대회에서 팀원 2명과 함께 공동창업자로 시작하였습니다. 
                     저희는 코로나 시대에 주식을 시작한 수많은 개인들의 문제점을 분석하고 그에 대한 3가지 해결책을 이 어플을 통해 제시하였습니다. 
                     {'\n'}
+                    {'\n'}
                     직접 처음부터 모든걸 해보니 스타트업은 정말 본인의 물음에 답을 찾는 과정이였습니다. Lean Canvas부터 시작하여 target 고객의 needs와 feedback을 발로 뛰면서 조사하고 듣는 Customer Discovery, 직접 투자자들 앞에서 발표하는 Pitch Deck 과정을 수행하였습니다.  
-                    Bluepoint Partners의 멘토링과 kakao ventures, the ventures등 다양한 투자 심의를 거치며 스타트업의 고충과 세상을 보는 Insight, 창업가로써의 성장과정을 직접 느낄 수 있었습니다. 
+                    Bluepoint Partners의 멘토링과 kakao ventures, the ventures등 다양한 투자 심의를 거치며 거의 2년이란은 시간속에서 스타트업의 고충과 세상을 보는 Insight, 창업가로써의 성장과정을 직접 느낄 수 있었습니다. 
                     {'\n'}
                     {'\n'}
                     {'\n'}
@@ -283,6 +340,32 @@ large_container: {
       marginBottom : 40,
 
   },
+
+  text_left : {
+          
+    fontFamily: 'NotoSansKR_500Medium',
+    includeFontPadding: false,
+    lineHeight: 20,
+    fontSize: 17,
+    marginLeft : 10,
+    //marginBottom: 40,
+    //marginTop: 20,
+    //marginBottom : wp('3%'),
+      
+},
+text_left_2 : {
+          
+    fontFamily: 'NotoSansKR_400Regular',
+    includeFontPadding: false,
+    lineHeight: 20,
+    fontSize: 15,
+    marginRight : 10,
+    //marginLeft : 20,
+    marginBottom: 20,
+    //marginTop: 20,
+    //marginBottom : wp('3%'),
+      
+},
 })
 
 export default Projects_1;

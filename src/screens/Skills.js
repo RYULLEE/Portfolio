@@ -57,7 +57,7 @@ const Skills = ({navigation},) => {
                                         ios, android 앱을 동시에 만드는 react-native를 주로 사용했습니다.
                                     </Text>
 
-                                <Button title="뒤로 가기" onPress={toggleModal} />
+                                <Button title="back" onPress={toggleModal} />
                                 </View>
                             </Modal>
                             <Image
@@ -85,7 +85,7 @@ const Skills = ({navigation},) => {
                                         그리고 소통과 업무정리는 주로 Notion을 이용했습니다. 
                                     </Text>
 
-                                <Button title="뒤로 가기" onPress={toggleModal2} />
+                                <Button title="back" onPress={toggleModal2} />
                                 </View>
                         </Modal>
 
@@ -109,7 +109,7 @@ const Skills = ({navigation},) => {
                                         Back-End로는 Google FireBase에서 로그인과 유저 관리를 위한 Authentication, {'\n'}이미지와 텍스트들을 업데이트하는 DataBase, 파일 업로드 기능을 위한 Storage 항목을 이용했습니다.  
                                     </Text>
 
-                                <Button title="뒤로 가기" onPress={toggleModal3} />
+                                <Button title="back" onPress={toggleModal3} />
                                 </View>
                             </Modal>
 
@@ -133,7 +133,7 @@ const Skills = ({navigation},) => {
                                         그리고 버전 관리 프로그램으로는 git과 github를 사용하였고, 서버 배포로는 netflify를 사용했습니다. 
                                     </Text>
 
-                                <Button title="뒤로 가기" onPress={toggleModal4} />
+                                <Button title="back" onPress={toggleModal4} />
                                 </View>
                             </Modal>
 

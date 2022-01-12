@@ -10,40 +10,41 @@ const Profile = ({navigation}) => {
         
         <View style={styles.container}>
             <View style={styles.left_large_box}>
-                <TouchableOpacity>
-                <View style={styles.box_1}>
+                
+                <TouchableOpacity style={styles.box_1}>
                     <Text>1</Text>
-                </View>
                 </TouchableOpacity>
 
-                <TouchableOpacity>
+                
+
+                
                 <View style={styles.box_2}>
-                    <TouchableOpacity onPress={() => navigation.navigate('Aboutme')}>
-                    <View style={styles.box_2_1}>
+                    <TouchableOpacity style={styles.box_2_1} onPress={() => navigation.navigate('Aboutme')}>
+                    
                         <Text>2_1</Text>
-                    </View>
+                    
                     </TouchableOpacity>
 
-                    <TouchableOpacity onPress={() => navigation.navigate('Skills')}>
-                    <View style={styles.box_2_2}>
+                    <TouchableOpacity style={styles.box_2_2} onPress={() => navigation.navigate('Skills')}>
+                    
                         <Text>2_2</Text>
-                    </View>
+                    
                     </TouchableOpacity>
                 </View>
-                </TouchableOpacity>
+                
             </View>
 
             <View style={styles.right_large_box}>
-                <TouchableOpacity onPress={() => navigation.navigate('Card')}> 
-                <View style={styles.box_3} >
+                <TouchableOpacity  style={styles.box_3} onPress={() => navigation.navigate('Card')}> 
+                
                     <Text>3</Text>
-                </View>
+                
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={() => navigation.navigate('Projects_info')}>
-                <View style={styles.box_4}>
+                <TouchableOpacity style={styles.box_4} onPress={() => navigation.navigate('Projects_info')}>
+                
                     <Text>4</Text>
-                </View>
+                
                 </TouchableOpacity>
             </View>
             
@@ -57,10 +58,10 @@ const Profile = ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        justifyContent: 'center',
+        //justifyContent: 'center',
         //alignItems: 'center',
         //backgroundColor : 'red',
-        height : hp('100%'),
+        //height : hp('100%'),
         flexDirection : 'row',
         marginLeft : wp('5%'),
         marginRight : wp('5%'),
@@ -70,32 +71,34 @@ const styles = StyleSheet.create({
     left_large_box : {
         //backgroundColor : 'black',
         //alignItems : 'center',
-        justifyContent : 'space-between',
-        flex:27.4,
+        //justifyContent : 'space-between',
+        flex:2,
         borderRadius : 20,
         marginRight : wp('1%'),
     },
     right_large_box : {
         //backgroundColor : 'yellow',
         //alignItems : 'center',
-        justifyContent : 'space-between',
-        flex:15,
+        //justifyContent : 'space-between',
+        flex:1,
         borderRadius : 20,
     },
     box_1 : {
-        backgroundColor : '#333F50',
+        flex: 4,
+        justifyContent : 'space-evenly',
         alignItems : 'center',
-        justifyContent : 'center',
-        
-        height : hp('58%'),
+        backgroundColor : 'white',
         borderRadius : 20,
+        marginBottom : wp('1%'),
+        //borderWidth : 5,
+        //borderColor : 'black'
     },
     box_2 : {
-        //backgroundColor : 'green',
+        flex: 2,
+        //justifyContent : 'space-evenly',
         //alignItems : 'center',
-        justifyContent : 'space-between',
-        //flex:10,
-        height : hp('27%'),
+        //backgroundColor : 'white',
+        //height : hp('27%'),
         borderRadius : 20,
         flexDirection : 'row',
     },
@@ -104,17 +107,18 @@ const styles = StyleSheet.create({
         backgroundColor : '#ADB9CA',
         alignItems : 'center',
         justifyContent : 'center',
-        flex:50,
-        width : wp('37.3%'),
-        height : 100,
+        flex:1.4,
+        //width : wp('37.3%'),
+        //height : 100,
         borderRadius : 20,
+        marginRight : wp('1%'),
     },
     box_2_2 : {
         backgroundColor : '#FFD966',
         alignItems : 'center',
         justifyContent : 'center',
         flex:1,
-        width : wp('19%'),
+        //width : wp('19%'),
         borderRadius : 20,
     },
 
@@ -122,16 +126,17 @@ const styles = StyleSheet.create({
         backgroundColor : '#A9D18E',
         alignItems : 'center',
         justifyContent : 'center',
-        //flex:1,
-        height : hp('38%'),
+        flex:1,
+        //height : hp('38%'),
         borderRadius : 20,
+        marginBottom : wp('1%'),
     },
     box_4 : {
         backgroundColor : '#F4B183',
         alignItems : 'center',
         justifyContent : 'center',
-        //flex:1,
-        height : hp('47%'),
+        flex:1.2,
+        //height : hp('47%'),
         borderRadius : 20,
     },
     

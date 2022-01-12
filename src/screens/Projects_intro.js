@@ -70,7 +70,7 @@ const Projects_info =({navigation})=> {
                           <Image
                                 style={{ width : wp('40%'),  flex:1,}}
                                 resizeMode="contain"
-                                source={require('../image/ward.png')}
+                                source={require('../image/pf_1.png')}
                             />
                           <View style={{alignItems : 'center', justifyContent : 'center'}}>
                           <Text style={styles.title}>
