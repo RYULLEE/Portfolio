@@ -4,6 +4,9 @@ import React from 'react';
 import { Button,useWindowDimensions, TouchableOpacity, Image, View, Text,StyleSheet, FlatList, Animated, Touchable } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { Dimensions, Platfrom, ScrollView } from 'react-native';
+import * as Animatable from 'react-native-animatable';
+import Snowflakes from 'react-native-snowflakes';
+//MyCustomComponent = Animatable.createAnimatableComponent(MyCustomComponent);
 
 const Profile = ({navigation}) => {
         return (
@@ -11,9 +14,18 @@ const Profile = ({navigation}) => {
         <View style={styles.container}>
             <View style={styles.left_large_box}>
                 
+               
                 <TouchableOpacity style={styles.box_1}>
+                <Snowflakes
+                numberOfSnowflakes={50}
+                />
+                   
                     <Text>1</Text>
+                    <Animatable.Text animation="bounce" iterationCount={5}>Zoom11 me up, Scotty</Animatable.Text>
+                    <Animatable.Text animation="pulse" iterationCount={5} >Up and down you go</Animatable.Text>
+                    
                 </TouchableOpacity>
+                
 
                 
 
@@ -35,7 +47,7 @@ const Profile = ({navigation}) => {
             </View>
 
             <View style={styles.right_large_box}>
-                <TouchableOpacity  style={styles.box_3} onPress={() => navigation.navigate('Card')}> 
+                <TouchableOpacity  style={styles.box_3} onPress={() => navigation.navigate('Career')}> 
                 
                     <Text>3</Text>
                 

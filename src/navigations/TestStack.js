@@ -12,6 +12,7 @@ import Card from '../screens/Card';
 import Projects_info from '../screens/Projects_intro';
 import Projects_1 from '../screens/Projects_1';
 import Projects_2 from '../screens/Projects_2';
+import Career from '../screens/Career';
 
 const TestStack = createStackNavigator(
     {
@@ -25,6 +26,7 @@ const TestStack = createStackNavigator(
         Projects_info : Projects_info,
         Projects_1 : Projects_1,
         Projects_2 : Projects_2,
+        Career : Career,
         
     },
     {
