@@ -6,6 +6,7 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 import { Dimensions, Platfrom, ScrollView } from 'react-native';
 import { useState, useEffect } from 'react';
 import Modal from "react-native-modal";
+import * as Animatable from 'react-native-animatable';
 
 
 
@@ -48,7 +49,8 @@ const Skills = ({navigation},) => {
                 <View style={styles.left_box}>
                     <TouchableOpacity style={styles.box_1} onLayout={onLayout} onPress={toggleModal}>
                         
-                            <Text style={styles.subtitle}>Front-End</Text>
+                            
+                            <Animatable.Text animation="pulse" iterationCount={10} style={styles.subtitle} >Front-end</Animatable.Text>
                             
                             <Modal isVisible={isModalVisible}>
                                 <View style={{ flex: 0.5, borderRadius : 20, alignItems : 'center', justifyContent : 'space-evenly'}}>
@@ -76,7 +78,7 @@ const Skills = ({navigation},) => {
 
                     <TouchableOpacity style={styles.box_2} onPress={toggleModal2}>
                     
-                        <Text style={styles.subtitle}>Communication</Text>
+                        <Animatable.Text animation="pulse" iterationCount={10} style={styles.subtitle} >Communication</Animatable.Text>
 
                         <Modal isVisible={isModalVisible2}>
                                 <View style={{ flex: 0.5, borderRadius : 20, alignItems : 'center', justifyContent : 'space-evenly'}}>
@@ -101,7 +103,7 @@ const Skills = ({navigation},) => {
                 <View style={styles.right_box}>
                     <TouchableOpacity style={styles.box_3} onPress={toggleModal3}>
                         
-                            <Text style={styles.subtitle}>Back-End</Text>
+                        <Animatable.Text animation="pulse" iterationCount={10} style={styles.subtitle} >Back-end</Animatable.Text>
 
                             <Modal isVisible={isModalVisible3}>
                                 <View style={{ flex: 0.5, borderRadius : 20, alignItems : 'center', justifyContent : 'space-evenly'}}>
@@ -124,7 +126,7 @@ const Skills = ({navigation},) => {
                     <TouchableOpacity style={styles.box_4} onPress={toggleModal4}>
                         
                             
-                            <Text style={styles.subtitle}>Others</Text>
+                        <Animatable.Text animation="pulse" iterationCount={10} style={styles.subtitle} >Others</Animatable.Text>
 
                             <Modal isVisible={isModalVisible4}>
                                 <View style={{ flex: 0.5, borderRadius : 20, alignItems : 'center', justifyContent : 'space-evenly'}}>

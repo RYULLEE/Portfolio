@@ -20,13 +20,13 @@ const Aboutme = ({navigation}) => {
                 
                 <TouchableOpacity>
                 <Image
-                style={{height:wp('100%')/6 , width: wp('100%')/6/10*7.78,marginBottom : 50,}}
+                style={{height:wp('100%')/5 , width: wp('100%')/5/10*7.78,marginBottom : 50,}}
                 source={require('../image/self_image.png')}
                 />
                 </TouchableOpacity>
 
                 <Image
-                    style={{ width: parentWidth*0.8, height:parentWidth*0.8/67.2*12.3 ,}}
+                    style={{ width: parentWidth*0.7, height:parentWidth*0.7/67.2*12.3 ,}}
                     source={require('../image/aboutme_info.png')}
                 />
             </View>

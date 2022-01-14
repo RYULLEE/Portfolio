@@ -18,46 +18,101 @@ const Career = ({navigation}) => {
     setParentWidth(width); 
   };
 
-    const data= [
+    const [box_select, setbox_select] = useState(0);
     
-        {time: '2015/02', title: 'KMO 한국 수학 올림피아드 금상', description: 'KMO 겨울학교 캠프 입소'},
-        {time: '2016/03', title: '세종과학예술영재학교 입학', description: '영재학교 세종과학예술영재학교 2기 졸업생 대표'},
-        {time: '2019/03', title: 'KAIST 입학', description: '전기 및 전자공학부, 전산학부'},
-        {time: '2020/12', title: 'KAIST 앱 창업대회 우수상', description: '블루포인트 파트너스 김용건 부대표님 멘티'},
-        {time: '2021/06', title: 'WARD Front-end 개발자', description: 'react-native를 이용한 앱 전체 개발'},
-        {time: '2021/08', title: 'E*5 KAIST Final 진출', description: '공동창업자- 스타트업 WARD 기획'},
-        
-        {time: '2021/09', title: '대전 생애 최초 창업대회 1위', description: '각종 시드투자 심의 착수'},
-        {time: '2021/11 ', title: 'NH투자증권 빅데이터 경진대회 본선진출', description: '주식 알고리즘과 머신러닝 개발 능력 검증'},
-        
 
-      ]
 
 
   return (
 
     <View style={styles.large_container} onLayout={onLayout}>
-        
-        <BurnsImage tension={4} friction={10} imageWidth={200} imageHeight={100} 
-        sourceUri={require('../image/react_native.png')} placeholderSource={require( '../image/communication.png')}/>
-        
-        <TouchableRipple>
-        <Text>Press Here</Text>
-      </TouchableRipple>
 
+        <View style={{width : parentWidth/2}}>
+        <View style={styles.box_1}>
+          <View style={styles.left_box}>
+            <Text style={styles.date}>2021/12</Text>
+          </View>
+          <TouchableOpacity style={styles.right_box}>
+            <Text style={styles.title}>NH투자증권 빅데이터 경진대회 본선진출</Text>
+            <Text style={styles.subtitle}>주식 알고리즘 검증 및 머신러닝 개발 능력 확인</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.box_1}>
+          <View style={styles.left_box}>
+            <Text style={styles.date}>2021/09</Text>
+          </View>
+          <TouchableOpacity style={styles.right_box}>
+            <Text style={styles.title}>대전 생애 최초 창업대회 1위</Text>
+            <Text style={styles.subtitle}>kakao ventures, the ventures 등에서 다양한 시드투자 심의</Text>
+          </TouchableOpacity>
+        </View>
         
-        <Timeline data={data}
-        circleSize={0.1}
-        circleColor='rgb(45,156,219)'
-        lineColor='#3104B4'
-        timeContainerStyle={{minWidth:52, marginTop: -5}}
-        timeStyle={{textAlign: 'center', backgroundColor:'#0B243B', color:'white', padding:5, borderRadius:5}}
-        descriptionStyle={{color:'gray'}}
-        options={{
-          style:{paddingTop:5}
-        }} 
-        />
-        
+        <View style={styles.box_1}>
+          <View style={styles.left_box}>
+            <Text style={styles.date}>2021/08</Text>
+          </View>
+          <TouchableOpacity style={styles.right_box}>
+            <Text style={styles.title}>E*5 KAIST FINAL 진출</Text>
+            <Text style={styles.subtitle}>KAIST 최고의 창업지원 프로그램 최종 12팀 선발, bluepoint partners 멘티</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.box_1}>
+          <View style={styles.left_box}>
+            <Text style={styles.date}>2021/06</Text>
+          </View>
+          <TouchableOpacity style={styles.right_box}>
+            <Text style={styles.title}>스타트업 WARD Front-end 개발자</Text>
+            <Text style={styles.subtitle}>공동창업자 및 react-native를 이용한 앱 전체 개발</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.box_1}>
+          <View style={styles.left_box}>
+            <Text style={styles.date}>2020/12</Text>
+          </View>
+          <TouchableOpacity style={styles.right_box}>
+            <Text style={styles.title}>KAIST 앱 창업대회 우수상</Text>
+            <Text style={styles.subtitle}>WARD 서비스 기획 및 개발준비</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.box_1}>
+          <View style={styles.left_box}>
+            <Text style={styles.date}>2019/03</Text>
+          </View>
+          <TouchableOpacity style={styles.right_box}>
+            <Text style={styles.title}>KAIST 입학</Text>
+            <Text style={styles.subtitle}>전기 및 전자공학부, 전산학부</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.box_1}>
+          <View style={styles.left_box}>
+            <Text style={styles.date}>2016/03</Text>
+          </View>
+          <TouchableOpacity style={styles.right_box}>
+            <Text style={styles.title}>세종과학예술영재학교 입학</Text>
+            <Text style={styles.subtitle}>영재학교 세종과학예술영재학교 2기 졸업생 대표</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.box_1}>
+          <View style={styles.left_box}>
+            <Text style={styles.date}>2015/02</Text>
+          </View>
+          <TouchableOpacity style={styles.right_box}>
+            <Text style={styles.title}>KMO 한국 수학올림피아드 금상</Text>
+            <Text style={styles.subtitle}>기초 수학능력 검증, 겨울학교 입소</Text>
+          </TouchableOpacity>
+        </View>
+
+        </View>
+
+        <View style={{width : parentWidth/2, backgroundColor : 'orange'}}>
+          <Text>111111111111</Text>
+        </View>
 
     </View>
   )
@@ -70,112 +125,84 @@ large_container: {
         //flex:1,
         //justifyContent: 'center',
         //alignItems: 'center',
-        //backgroundColor : '#FFD966',
+        backgroundColor : '#FFD966',
         //width : wp('100%'),
         //height : hp('100%'),
-        //flexDirection : 'row',
+        flexDirection : 'row',
         marginLeft : wp('5%'),
         marginRight : wp('5%'),
         marginTop : wp('2%'),
         marginBottom : wp('2%'),
         //height : 1000,
     },
+    box_1 : {
+      backgroundColor : 'green',
+      //justifyContent : 'center',
+      alignItems : 'flex-start',
+      flexDirection: 'row',
+      marginBottom : 20,
 
+    },
     left_box : {
-        justifyContent : 'center',
-        alignItems : 'center',
-        
+      backgroundColor : '#0B3861',
+      justifyContent : 'center',
+      alignItems : 'center',
+      //flexDirection: 'row',
+      //borderWidth : 2,
+      borderRadius : 10,
+      
 
     },
-
     right_box : {
-        //justifyContent : 'center',
-        alignItems : 'center',
-        //backgroundColor : 'blue',
-        flexDirection : 'row',
+      //backgroundColor : 'green',
+      justifyContent : 'center',
+      //alignItems : 'center',
+      //flexDirection: 'row',
+      borderWidth : 2,
+      marginLeft : 20,
+      //marginTop : 20,
+      marginBottom : 20,
 
     },
-
-    card : {
-        //flex:1,
-        
-        alignItems:"center",
-        justifyContent:"space-evenly",
-        backgroundColor:"white",
-        borderWidth : 4,
-        borderColor : 'black',
-        borderRadius : 15,
-        zIndex : 10,
-        height : 500,
-      },
       
       title : {
           
-        fontFamily: 'NotoSansKR_700Bold',
+        fontFamily: 'NotoSansKR_500Medium',
         includeFontPadding: false,
         lineHeight: 20,
-        fontSize: 25,
+        fontSize: 20,
         //marginBottom: 40,
-        marginTop: 20,
+        marginTop: 10,
+        marginBottom : 10,
           
     },
     subtitle : {
           
-      fontFamily: 'NotoSansKR_400Regular',
+      fontFamily: 'NotoSansKR_500Medium',
       includeFontPadding: false,
       lineHeight: 20,
       fontSize: 15,
+      color : '#585858',
       //marginBottom: 40,
-      marginTop: 20,
+      //marginTop: 20,
       //marginBottom : wp('3%'),
         
   },
-    head_text : {
+  date : {
           
     fontFamily: 'NotoSansKR_500Medium',
-    includeFontPadding: false,
-    lineHeight: 20,
-    fontSize: 17,
-    //marginBottom: 40,
-    //marginTop: 20,
-    //marginBottom : wp('3%'),
-      
-},
-
-  text_box: {
-      justifyContent : 'center',
-      alignItems : 'center',
-      marginHorizontal : 40,
-      marginTop : 20,
-      marginBottom : 40,
-
-  },
-
-  text_left : {
-          
-    fontFamily: 'NotoSansKR_500Medium',
-    includeFontPadding: false,
-    lineHeight: 20,
-    fontSize: 17,
-    marginLeft : 10,
-    //marginBottom: 40,
-    //marginTop: 20,
-    //marginBottom : wp('3%'),
-      
-},
-text_left_2 : {
-          
-    fontFamily: 'NotoSansKR_400Regular',
     includeFontPadding: false,
     lineHeight: 20,
     fontSize: 15,
+    color : 'white',
+    marginBottom: 10,
+    marginTop: 10,
     marginRight : 10,
-    //marginLeft : 20,
-    marginBottom: 20,
-    //marginTop: 20,
+    marginLeft : 10,
     //marginBottom : wp('3%'),
       
 },
+   
 })
 
 export default Career;
