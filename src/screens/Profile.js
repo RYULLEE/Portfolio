@@ -6,12 +6,20 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 import { Dimensions, Platfrom, ScrollView } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import Snowflakes from 'react-native-snowflakes';
+import { useState, useEffect } from 'react';
 //MyCustomComponent = Animatable.createAnimatableComponent(MyCustomComponent);
 
 const Profile = ({navigation}) => {
+
+    const [parentWidth, setParentWidth] = useState(0);
+    const onLayout = event => {
+    const {width} = event.nativeEvent.layout;
+    setParentWidth(width);
+  };
         return (
         
-        <View style={styles.container}>
+        <View style={styles.container} onLayout={onLayout}>
+        <View style={{width: parentWidth, height : parentWidth/2, flexDirection : 'row'}}>    
             <View style={styles.left_large_box}>
                 
                
@@ -61,7 +69,7 @@ const Profile = ({navigation}) => {
             </View>
             
             
-
+        </View>
         </View>
         )
     

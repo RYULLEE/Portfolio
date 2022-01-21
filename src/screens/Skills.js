@@ -18,6 +18,7 @@ const Skills = ({navigation},) => {
     setParentWidth(width);
   };
 
+    
     const [isModalVisible, setModalVisible] = useState(false);
   
     const toggleModal = () => {
@@ -43,15 +44,21 @@ const Skills = ({navigation},) => {
     };
 
     return (
-            <View style={styles.container_1}>
+            <View style={styles.container_1} onLayout={onLayout}>
+            <View style={{width: parentWidth, height : parentWidth/2,backgroundColor : '#FFD966' }}>  
             <View style={styles.large_container}>
                 
                 <View style={styles.left_box}>
-                    <TouchableOpacity style={styles.box_1} onLayout={onLayout} onPress={toggleModal}>
+                    <TouchableOpacity style={styles.box_1}  onPress={toggleModal}>
                         
                             
-                            <Animatable.Text animation="pulse" iterationCount={10} style={styles.subtitle} >Front-end</Animatable.Text>
-                            
+                            <Animatable.Text animation="pulse" iterationCount={100} 
+                            style={{fontFamily: 'NotoSansKR_900Black ',
+                                    includeFontPadding: false,
+                                    lineHeight: 20,
+                                    fontSize: parentWidth/40,
+                                    //marginBottom: 40,
+                                    marginTop: parentWidth/50,}} >Front-end</Animatable.Text>
                             <Modal isVisible={isModalVisible}>
                                 <View style={{ flex: 0.5, borderRadius : 20, alignItems : 'center', justifyContent : 'space-evenly'}}>
                                     <Text style={styles.modal_text}>
@@ -63,11 +70,11 @@ const Skills = ({navigation},) => {
                                 </View>
                             </Modal>
                             <Image
-                                style={{  width : parentWidth*0.6,height : parentWidth*0.6/20*7.58 , marginTop : 25,}}
+                                style={{  width : parentWidth/2.3*0.6,height : parentWidth/2.3*0.6/20*7.58 , marginTop : parentWidth/50,}}
                                 source={require('../image/html.png')}
                             />
                             <Image
-                                style={{  width : parentWidth*0.6,height : parentWidth*0.6/10*3.45 }}
+                                style={{  width : parentWidth/2.3*0.6,height : parentWidth/2.3*0.6/10*3.45 }}
                                 source={require('../image/react_native.png')}
                             />
                             
@@ -78,7 +85,13 @@ const Skills = ({navigation},) => {
 
                     <TouchableOpacity style={styles.box_2} onPress={toggleModal2}>
                     
-                        <Animatable.Text animation="pulse" iterationCount={10} style={styles.subtitle} >Communication</Animatable.Text>
+                        <Animatable.Text animation="pulse" iterationCount={100} 
+                                    style={{fontFamily: 'NotoSansKR_900Black ',
+                                    includeFontPadding: false,
+                                    lineHeight: 20,
+                                    fontSize: parentWidth/40,
+                                    //marginBottom: 40,
+                                    marginTop: parentWidth/50,}} >Communication</Animatable.Text>
 
                         <Modal isVisible={isModalVisible2}>
                                 <View style={{ flex: 0.5, borderRadius : 20, alignItems : 'center', justifyContent : 'space-evenly'}}>
@@ -92,7 +105,7 @@ const Skills = ({navigation},) => {
                         </Modal>
 
                         <Image
-                            style={{  width : parentWidth*0.6,height : parentWidth*0.6/10*1.74,marginTop : 15, }}
+                            style={{  width : parentWidth/2.3*0.6,height : parentWidth/2.3*0.6/10*1.74,marginTop : parentWidth/50, }}
                             source={require('../image/communication.png')}
                         />
 
@@ -103,7 +116,13 @@ const Skills = ({navigation},) => {
                 <View style={styles.right_box}>
                     <TouchableOpacity style={styles.box_3} onPress={toggleModal3}>
                         
-                        <Animatable.Text animation="pulse" iterationCount={10} style={styles.subtitle} >Back-end</Animatable.Text>
+                        <Animatable.Text animation="pulse" iterationCount={100} 
+                                    style={{fontFamily: 'NotoSansKR_900Black ',
+                                    includeFontPadding: false,
+                                    lineHeight: 20,
+                                    fontSize: parentWidth/40,
+                                    //marginBottom: 40,
+                                    marginTop: parentWidth/50,}} >Back-end</Animatable.Text>
 
                             <Modal isVisible={isModalVisible3}>
                                 <View style={{ flex: 0.5, borderRadius : 20, alignItems : 'center', justifyContent : 'space-evenly'}}>
@@ -116,7 +135,7 @@ const Skills = ({navigation},) => {
                             </Modal>
 
                             <Image
-                                style={{  width : parentWidth*0.4,height : parentWidth*0.4/10*2.77,marginTop : 15, }}
+                                style={{  width : parentWidth/2.3*0.4,height : parentWidth/2.3*0.4/10*2.77,marginTop : parentWidth/50, }}
                                 source={require('../image/firebase.png')}
                             />
 
@@ -126,7 +145,13 @@ const Skills = ({navigation},) => {
                     <TouchableOpacity style={styles.box_4} onPress={toggleModal4}>
                         
                             
-                        <Animatable.Text animation="pulse" iterationCount={10} style={styles.subtitle} >Others</Animatable.Text>
+                        <Animatable.Text animation="pulse" iterationCount={100} 
+                                    style={{fontFamily: 'NotoSansKR_900Black ',
+                                    includeFontPadding: false,
+                                    lineHeight: 20,
+                                    fontSize: parentWidth/40,
+                                    //marginBottom: 40,
+                                    marginTop: parentWidth/50,}} >Others</Animatable.Text>
 
                             <Modal isVisible={isModalVisible4}>
                                 <View style={{ flex: 0.5, borderRadius : 20, alignItems : 'center', justifyContent : 'space-evenly'}}>
@@ -140,19 +165,19 @@ const Skills = ({navigation},) => {
                             </Modal>
 
                             <Image
-                                style={{  width : parentWidth*0.3,height : parentWidth*0.3/10*3.25,marginTop : 30, }}
+                                style={{  width : parentWidth/3*0.3,height : parentWidth/3*0.3/10*3.25,marginTop : parentWidth/50, }}
                                 source={require('../image/python.png')}
                             />
                             <Image
-                                style={{  width : parentWidth*0.3,height : parentWidth*0.3/10*3.4,marginTop : 15, }}
+                                style={{  width : parentWidth/3*0.3,height : parentWidth/3*0.3/10*3.4,marginTop : parentWidth/50, }}
                                 source={require('../image/git.png')}
                             />
                             <Image
-                                style={{  width : parentWidth*0.3,height : parentWidth*0.3/10*2.95,marginTop : 15, }}
+                                style={{  width : parentWidth/3*0.3,height : parentWidth/3*0.3/10*2.95,marginTop : parentWidth/50, }}
                                 source={require('../image/github.png')}
                             />
                             <Image
-                                style={{  width : parentWidth*0.3,height : parentWidth*0.3/10*2.72,marginTop : 15, }}
+                                style={{  width : parentWidth/3*0.3,height : parentWidth/3*0.3/10*2.72,marginTop : parentWidth/50, }}
                                 source={require('../image/netflify.png')}
                             />
                         
@@ -160,6 +185,7 @@ const Skills = ({navigation},) => {
                 </View>
 
 
+            </View>
             </View>
             </View>
     )
@@ -183,7 +209,7 @@ const styles = StyleSheet.create({
     }, 
     container_1 : {
         flex : 1,
-        backgroundColor : '#FFD966',
+        
     },
 
     left_box : {
@@ -228,7 +254,7 @@ const styles = StyleSheet.create({
     },
     box_4 : {
         flex: 2.4,
-        justifyContent : 'center',
+        justifyContent : 'space-evenly',
         alignItems : 'center',
         backgroundColor : 'white',
         borderRadius : 15,

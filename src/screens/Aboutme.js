@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react';
 import { Feather } from '@expo/vector-icons'; 
 import { Ionicons } from '@expo/vector-icons'; 
 import { Fontisto } from '@expo/vector-icons'; 
+import { Entypo } from '@expo/vector-icons'; 
 
 const Aboutme = ({navigation}) => {
 
@@ -35,21 +36,21 @@ const Aboutme = ({navigation}) => {
                         </Text>
                 </View>
                 
-
+                
                 <View style={styles.bottom_card}>
-                    <View style={{flex:1, backgroundColor : 'yellow', marginLeft : parentWidth/40, justifyContent : 'center', alignItems : 'center'}}>
+                    <View style={{flex:1,  marginLeft : parentWidth/40, justifyContent : 'center', alignItems : 'center'}}>
                     <Image
-                    style={{width: parentWidth/1.5/4, height: parentWidth/1.5/4/7.78*10 ,marginBottom : 50,}}
+                    style={{width: parentWidth/1.5/4.5, height: parentWidth/1.5/4.5/7.78*10 ,marginBottom : 50,}}
                     source={require('../image/self_image.png')}
                     />
                     
                     </View>
 
-                    <View style={{flex:3, backgroundColor : 'green', marginLeft : parentWidth/40, flexDirection:'row',}}>
+                    <View style={{flex:3, marginLeft : parentWidth/40, flexDirection:'row',}}>
                         <View style={styles.box_1}>
 
                             <View style={styles.box_1_1}>
-                                <Feather name="user" size={parentWidth/20} color="black" style={{marginRight : parentWidth/20,marginLeft : parentWidth/50, }} />
+                                <Feather name="user" size={parentWidth/30} color="black" style={{marginRight : parentWidth/20,marginLeft : parentWidth/50, }} />
                                 <View style={{alignItems : 'center'}}>
                                     <Text style={{
                                         fontFamily: 'NotoSansKR_500Medium',
@@ -64,14 +65,15 @@ const Aboutme = ({navigation}) => {
                                         fontFamily: 'NotoSansKR_500Medium',
                                         includeFontPadding: false,
                                         lineHeight: 20,
-                                        fontSize: parentWidth/60,
+                                        fontSize: parentWidth/90,
+                                        color : '#6E6E6E',
                                         }}>
                                         이률</Text>
                                 </View>
                             </View>
 
                             <View style={styles.box_1_2}>
-                                <Fontisto name="date" size={parentWidth/20} color="black" style={{marginRight : parentWidth/20,marginLeft : parentWidth/50, }} />
+                                <Fontisto name="date" size={parentWidth/30} color="black" style={{marginRight : parentWidth/22,marginLeft : parentWidth/50, }} />
                                 <View style={{alignItems : 'center'}}>
                                     <Text style={{
                                         fontFamily: 'NotoSansKR_500Medium',
@@ -80,19 +82,20 @@ const Aboutme = ({navigation}) => {
                                         fontSize: parentWidth/50,
                                         marginBottom : parentWidth/80,
                                         }}>
-                                        생년월일
+                                        생일
                                     </Text>
                                     <Text style={{
                                         fontFamily: 'NotoSansKR_500Medium',
                                         includeFontPadding: false,
                                         lineHeight: 20,
-                                        fontSize: parentWidth/60,
+                                        fontSize: parentWidth/90,
+                                        color : '#6E6E6E',
                                         }}>
                                         00.05.01</Text>
                                 </View>
                             </View>
                             <View style={styles.box_1_3}>
-                                <Feather name="map-pin" size={parentWidth/20} color="black" />
+                                <Feather name="map-pin" size={parentWidth/30} color="black" style={{marginRight : parentWidth/25,marginLeft : parentWidth/50, }} />
                                 <View>
                                 <View style={{alignItems : 'center'}}>
                                     <Text style={{
@@ -108,18 +111,91 @@ const Aboutme = ({navigation}) => {
                                         fontFamily: 'NotoSansKR_500Medium',
                                         includeFontPadding: false,
                                         lineHeight: 20,
-                                        fontSize: parentWidth/60,
+                                        fontSize: parentWidth/90,
+                                        color : '#6E6E6E',
                                         }}>
-                                        경기도 고양시</Text>
+                                        고양시</Text>
                                 </View>
                                 </View>
                             </View>
                         </View>
-                        <View style={styles.box_2}></View>
+                        <View style={styles.box_2}>
+                        <View style={styles.box_1_1}>
+                                <Ionicons name="call-outline" size={parentWidth/30} color="black" style={{marginRight : parentWidth/20,marginLeft : parentWidth/50, }} />
+                                <View style={{alignItems : 'center'}}>
+                                    <Text style={{
+                                        fontFamily: 'NotoSansKR_500Medium',
+                                        includeFontPadding: false,
+                                        lineHeight: 20,
+                                        fontSize: parentWidth/50,
+                                        marginBottom : parentWidth/80,
+                                        }}>
+                                        연락처
+                                    </Text>
+                                    <Text style={{
+                                        fontFamily: 'NotoSansKR_500Medium',
+                                        includeFontPadding: false,
+                                        lineHeight: 20,
+                                        fontSize: parentWidth/90,
+                                        color : '#6E6E6E',
+                                        }}>
+                                        010-8758-7417</Text>
+                                </View>
+                            </View>
+
+                            <View style={styles.box_1_2}>
+                                <Fontisto name="email" size={parentWidth/30} color="black" style={{marginRight : parentWidth/20,marginLeft : parentWidth/50, }} />
+                                <View style={{alignItems : 'center'}}>
+                                    <Text style={{
+                                        fontFamily: 'NotoSansKR_500Medium',
+                                        includeFontPadding: false,
+                                        lineHeight: 20,
+                                        fontSize: parentWidth/50,
+                                        marginBottom : parentWidth/80,
+                                        }}>
+                                        이메일
+                                    </Text>
+                                    <Text style={{
+                                        fontFamily: 'NotoSansKR_500Medium',
+                                        includeFontPadding: false,
+                                        lineHeight: 20,
+                                        fontSize: parentWidth/90,
+                                        color : '#6E6E6E',
+                                        }}>
+                                        bluesunson@{'\n'}kaist.ac.kr</Text>
+                                </View>
+                            </View>
+                            <View style={styles.box_1_3}>
+                                <Entypo name="open-book" size={parentWidth/30} color="black" style={{marginRight : parentWidth/20,marginLeft : parentWidth/50, }} />
+                                <View>
+                                <View style={{alignItems : 'center'}}>
+                                    <Text style={{
+                                        fontFamily: 'NotoSansKR_500Medium',
+                                        includeFontPadding: false,
+                                        lineHeight: 20,
+                                        fontSize: parentWidth/50,
+                                        marginBottom : parentWidth/80,
+                                        }}>
+                                        학력
+                                    </Text>
+                                    <Text style={{
+                                        fontFamily: 'NotoSansKR_500Medium',
+                                        includeFontPadding: false,
+                                        lineHeight: 20,
+                                        fontSize: parentWidth/90,
+                                        color : '#6E6E6E',
+                                        }}>
+                                        KAIST( 전기 및{'\n'}전자공학부 )</Text>
+                                </View>
+                                </View>
+                            </View>
+
+
+                        </View>
                         
                     </View>
 
-                    <View style={{flex:0.5, backgroundColor : 'red', justifyContent : 'center', alignItems : 'center',}}>
+                    <View style={{flex:0.5, justifyContent : 'center', alignItems : 'center',}}>
                         <Image
                         style={{width: parentWidth/1.5/4.4*0.2, height: parentWidth/1.5/4.4*0.3/10*56.6 ,}}
                         source={require('../image/barcord.png')}
@@ -149,7 +225,7 @@ const styles = StyleSheet.create({
         
     }, 
     top_card : {
-        flex : 1,
+        flex : 1.5,
         backgroundColor : '#03387C',
         borderTopRightRadius : 25,
         borderTopLeftRadius : 25,
@@ -167,15 +243,18 @@ const styles = StyleSheet.create({
     },
     box_1 : {
         flex:1,
+        borderRightWidth : 2,
+        borderColor: '#03387C',
+        borderStyle: 'dotted'
         
     },
     box_2 : {
         flex:1,
-        backgroundColor : 'white',
+        //backgroundColor : 'white',
     },
     box_1_1:{
         flex:1,
-        backgroundColor : 'blue',
+        //backgroundColor : 'blue',
         flexDirection : 'row',
         alignItems : 'center',
         //justifyContent : 'space-between',
@@ -187,7 +266,7 @@ const styles = StyleSheet.create({
     },
     box_1_3:{
         flex:1,
-        backgroundColor : 'blue',
+        //backgroundColor : 'blue',
         flexDirection : 'row',
         alignItems : 'center',
     },

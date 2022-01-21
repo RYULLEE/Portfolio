@@ -17,7 +17,7 @@ const Projects_info =({navigation})=> {
         return (
             <View style={styles.large_container} >
               
-              <View style={{flex:0.5,}} onLayout={onLayout} >
+              <View style={{flex:0.5,}} onLayout={onLayout}>
               
               
                   <Swiper
@@ -27,7 +27,7 @@ const Projects_info =({navigation})=> {
                       dotsTouchable: true,
                       prevPos: 'left',
                       nextPos: 'right',
-                      width_props : {parentWidth},
+                      
                       
                       nextTitle: '>',
                       nextTitleStyle: { color: 'black', fontSize: 30, fontWeight: '700' },
@@ -42,8 +42,8 @@ const Projects_info =({navigation})=> {
                       ),
                     }}
                   >
-                   
-                      <TouchableOpacity  onPress={() => navigation.navigate('Projects_1')} style={styles.card} >
+                      
+                      <TouchableOpacity  onPress={() => navigation.navigate('Projects_1')} style={styles.card}  >
                       
                           
                           <Image
@@ -54,7 +54,9 @@ const Projects_info =({navigation})=> {
                           <View style={{alignItems : 'center', justifyContent : 'center'}}>
                           <Text style={styles.title}>
                             모두를 위한 주식분석 서비스, WARD
+                            
                           </Text>
+
 
                           <Text style={styles.subtitle} resizeMode='contain'>
                           2020.03 – 2021.11 ( 스타트업 공동 창업자 및 개발자 )
@@ -86,7 +88,7 @@ const Projects_info =({navigation})=> {
                       
                       </TouchableOpacity>
                   </Swiper>
-
+                  <Text>{parentWidth}</Text>
                               
               </View>
               

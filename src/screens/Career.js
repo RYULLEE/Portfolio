@@ -30,91 +30,280 @@ const Career = ({navigation}) => {
         <View style={{width : parentWidth/2,}}>
         <TouchableOpacity style={styles.box_1} onPress={() => setbox_select(1)}>
           <View style={styles.left_box}>
-            <Text style={styles.date}>2021/12</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : 'white',
+                  marginBottom: parentWidth/120,
+                  marginTop: parentWidth/120,
+                  marginRight : parentWidth/120,
+                  marginLeft : parentWidth/120,}}>2021/12</Text>
           </View>
-          <View style={styles.right_box} >
-            <Text style={styles.title}>NH투자증권 빅데이터 경진대회 본선진출</Text>
-            <Text style={styles.subtitle}>주식 알고리즘 검증 및 머신러닝 개발 능력 확인</Text>
+          <View style={{justifyContent : 'center',
+                marginLeft : parentWidth/60,
+                marginBottom : parentWidth/40,}} >
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/60,
+                  //marginBottom: 40,
+                  marginTop: parentWidth/120,
+                  marginBottom : parentWidth/120,}}>NH투자증권 빅데이터 경진대회 본선진출</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : '#585858',
+                  marginTop: parentWidth/120,}}>주식 알고리즘 검증 및 머신러닝 개발 능력 확인</Text>
           </View>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.box_1} onPress={() => setbox_select(2)}>
           <View style={styles.left_box}>
-            <Text style={styles.date}>2021/09</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : 'white',
+                  marginBottom: parentWidth/120,
+                  marginTop: parentWidth/120,
+                  marginRight : parentWidth/120,
+                  marginLeft : parentWidth/120,}}>2021/09</Text>
           </View>
-          <View style={styles.right_box} >
-            <Text style={styles.title}>제정데이터 시각화 경진대회 본선 진출</Text>
-            <Text style={styles.subtitle}>빅데이터 클린징 과정 체험</Text>
+          <View style={{justifyContent : 'center',
+                marginLeft : parentWidth/60,
+                marginBottom : parentWidth/40,}} >
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/60,
+                  //marginBottom: 40,
+                  marginTop: parentWidth/120,
+                  marginBottom : parentWidth/120,}}>제정데이터 시각화 경진대회 본선 진출</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : '#585858',
+                  marginTop: parentWidth/120,}}>빅데이터 클린징 과정 체험</Text>
           </View>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.box_1 } onPress={() => setbox_select(3)}>
           <View style={styles.left_box}>
-            <Text style={styles.date}>2021/09</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : 'white',
+                  marginBottom: parentWidth/120,
+                  marginTop: parentWidth/120,
+                  marginRight : parentWidth/120,
+                  marginLeft : parentWidth/120,}}>2021/09</Text>
           </View>
-          <View style={styles.right_box} >
-            <Text style={styles.title}>대전 생애 최초 창업대회 1위</Text>
-            <Text style={styles.subtitle}>kakao ventures, the ventures 등에서 다양한 시드투자 심의</Text>
+          <View style={{justifyContent : 'center',
+                marginLeft : parentWidth/60,
+                marginBottom : parentWidth/40,}} >
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/60,
+                  //marginBottom: 40,
+                  marginTop: parentWidth/120,
+                  marginBottom : parentWidth/120,}}>대전 생애 최초 창업대회 1위</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : '#585858',
+                  marginTop: parentWidth/120,}}>kakao ventures, the ventures 등에서 다양한 시드투자 심의</Text>
           </View>
         </TouchableOpacity>
         
         <TouchableOpacity style={styles.box_1} onPress={() => setbox_select(4)}>
           <View style={styles.left_box}>
-            <Text style={styles.date}>2021/07</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : 'white',
+                  marginBottom: parentWidth/120,
+                  marginTop: parentWidth/120,
+                  marginRight : parentWidth/120,
+                  marginLeft : parentWidth/120,}}>2021/07</Text>
           </View>
-          <View style={styles.right_box} >
-            <Text style={styles.title}>E*5 KAIST FINAL 진출</Text>
-            <Text style={styles.subtitle}>KAIST 최고의 창업지원 프로그램 최종 12팀 선발, bluepoint partners 멘티</Text>
+          <View style={{justifyContent : 'center',
+                marginLeft : parentWidth/60,
+                marginBottom : parentWidth/40,}} >
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/60,
+                  //marginBottom: 40,
+                  marginTop: parentWidth/120,
+                  marginBottom : parentWidth/120,}}>E*5 KAIST FINAL 진출</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : '#585858',
+                  marginTop: parentWidth/120,}}>KAIST 최고의 창업지원 프로그램 최종 12팀 선발,{'\n'}bluepoint partners 멘티</Text>
           </View>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.box_1} onPress={() => setbox_select(5)}>
           <View style={styles.left_box}>
-            <Text style={styles.date}>2021/06</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : 'white',
+                  marginBottom: parentWidth/120,
+                  marginTop: parentWidth/120,
+                  marginRight : parentWidth/120,
+                  marginLeft : parentWidth/120,}}>2021/03</Text>
           </View>
-          <View style={styles.right_box}>
-            <Text style={styles.title}>스타트업 WARD Front-end 개발자</Text>
-            <Text style={styles.subtitle}>공동창업자 및 react-native를 이용한 앱 전체 개발</Text>
+          <View style={{justifyContent : 'center',
+                marginLeft : parentWidth/60,
+                marginBottom : parentWidth/40,}}>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/60,
+                  //marginBottom: 40,
+                  marginTop: parentWidth/120,
+                  marginBottom : parentWidth/120,}}>스타트업 WARD Front-end 개발자</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : '#585858',
+                  marginTop: parentWidth/120,}}>공동창업자 및 react-native를 이용한 앱 전체 개발</Text>
           </View>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.box_1} onPress={() => setbox_select(6)}>
           <View style={styles.left_box}>
-            <Text style={styles.date}>2020/12</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : 'white',
+                  marginBottom: parentWidth/120,
+                  marginTop: parentWidth/120,
+                  marginRight : parentWidth/120,
+                  marginLeft : parentWidth/120,}}>2020/12</Text>
           </View>
-          <View style={styles.right_box} >
-            <Text style={styles.title}>KAIST 앱 창업대회 우수상</Text>
-            <Text style={styles.subtitle}>WARD 서비스 기획 및 개발준비</Text>
+          <View style={{justifyContent : 'center',
+                marginLeft : parentWidth/60,
+                marginBottom : parentWidth/40,}} >
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/60,
+                  //marginBottom: 40,
+                  marginTop: parentWidth/120,
+                  marginBottom : parentWidth/120,}}>KAIST 앱 창업대회 우수상</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : '#585858',
+                  marginTop: parentWidth/120,}}>WARD 서비스 기획 및 개발준비</Text>
           </View>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.box_1} onPress={() => setbox_select(7)}>
           <View style={styles.left_box}>
-            <Text style={styles.date}>2019/03</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : 'white',
+                  marginBottom: parentWidth/120,
+                  marginTop: parentWidth/120,
+                  marginRight : parentWidth/120,
+                  marginLeft : parentWidth/120,}}>2019/03</Text>
           </View>
-          <View style={styles.right_box} >
-            <Text style={styles.title}>KAIST 입학</Text>
-            <Text style={styles.subtitle}>전기 및 전자공학부, 전산학부</Text>
+          <View style={{justifyContent : 'center',
+                marginLeft : parentWidth/60,
+                marginBottom : parentWidth/40,}} >
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/60,
+                  //marginBottom: 40,
+                  marginTop: parentWidth/120,
+                  marginBottom : parentWidth/120,}}>KAIST 입학</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : '#585858',
+                  marginTop: parentWidth/120,}}>전기 및 전자공학부, 전산학부</Text>
           </View>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.box_1} onPress={() => setbox_select(8)}>
           <View style={styles.left_box}>
-            <Text style={styles.date}>2016/03</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : 'white',
+                  marginBottom: parentWidth/120,
+                  marginTop: parentWidth/120,
+                  marginRight : parentWidth/120,
+                  marginLeft : parentWidth/120,}}>2016/03</Text>
           </View>
-          <View style={styles.right_box} >
-            <Text style={styles.title}>세종과학예술영재학교 입학</Text>
-            <Text style={styles.subtitle}>영재학교 세종과학예술영재학교 2기 졸업생 대표</Text>
+          <View style={{justifyContent : 'center',
+                marginLeft : parentWidth/60,
+                marginBottom : parentWidth/40,}} >
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/60,
+                  //marginBottom: 40,
+                  marginTop: parentWidth/120,
+                  marginBottom : parentWidth/120,}}>세종과학예술영재학교 입학</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : '#585858',
+                  marginTop: parentWidth/120,}}>영재학교 세종과학예술영재학교 2기 졸업생 대표</Text>
           </View>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.box_1} onPress={() => setbox_select(9)}>
           <View style={styles.left_box}>
-            <Text style={styles.date}>2015/02</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : 'white',
+                  marginBottom: parentWidth/120,
+                  marginTop: parentWidth/120,
+                  marginRight : parentWidth/120,
+                  marginLeft : parentWidth/120,}}>2015/02</Text>
           </View>
-          <View style={styles.right_box} >
-            <Text style={styles.title}>KMO 한국 수학올림피아드 금상</Text>
-            <Text style={styles.subtitle}>기초 수학능력 검증, 겨울학교 입소</Text>
+          <View style={{justifyContent : 'center',
+                marginLeft : parentWidth/60,
+                marginBottom : parentWidth/40,}} >
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/60,
+                  //marginBottom: 40,
+                  marginTop: parentWidth/120,
+                  marginBottom : parentWidth/120,}}>KMO 한국 수학올림피아드 금상</Text>
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+                  includeFontPadding: false,
+                  lineHeight: 20,
+                  fontSize: parentWidth/80,
+                  color : '#585858',
+                  marginTop: parentWidth/120,}}>기초 수학능력 검증, 겨울학교 입소</Text>
           </View>
         </TouchableOpacity>
 
@@ -296,11 +485,7 @@ large_container: {
     right_box : {
       //backgroundColor : 'green',
       justifyContent : 'center',
-      //alignItems : 'center',
-      //flexDirection: 'row',
-      //borderWidth : 2,
       marginLeft : 20,
-      //marginTop : 20,
       marginBottom : 30,
 
     },
@@ -323,7 +508,6 @@ large_container: {
       lineHeight: 20,
       fontSize: 15,
       color : '#585858',
-      //marginBottom: 40,
       marginTop: 10,
       //marginLeft : 20,
       //marginBottom : wp('3%'),
