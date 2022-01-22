@@ -307,13 +307,20 @@ const Career = ({navigation}) => {
           </View>
         </TouchableOpacity>
 
+        
+
         </View>
 
         <View>
           
         <View style={{width : parentWidth/2, alignItems : 'center' }}>
           {(box_select==0?true:false) &&
-            <Text style={styles.subtitle_2}>---- 박스를 선택해주세요 ----</Text>
+           
+            <Text style={{fontFamily: 'NotoSansKR_500Medium',
+            includeFontPadding: false,
+            lineHeight: 20,
+            fontSize: parentWidth/80,}}>---- 박스를 선택해주세요 ----</Text>
+
           }
           {(box_select==1?true:false) &&
             <View style={{alignItems : 'center', marginHorizontal : parentWidth/25}}>
