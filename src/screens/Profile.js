@@ -19,57 +19,123 @@ const Profile = ({navigation}) => {
         return (
         
         <View style={styles.container} onLayout={onLayout}>
-        <View style={{width: parentWidth, height : parentWidth/2, flexDirection : 'row'}}>    
-            <View style={styles.left_large_box}>
-                
-               
-                <TouchableOpacity style={styles.box_1}>
-                <Snowflakes
-                numberOfSnowflakes={50}
-                />
-                   
-                    <Text>1</Text>
-                    <Animatable.Text animation="bounce" iterationCount={5}>Zoom11 me up, Scotty</Animatable.Text>
-                    <Animatable.Text animation="pulse" iterationCount={5} >Up and down you go</Animatable.Text>
-                    
-                </TouchableOpacity>
-                
-
-                
-
-                
-                <View style={styles.box_2}>
-                    <TouchableOpacity style={styles.box_2_1} onPress={() => navigation.navigate('Aboutme')}>
-                    
-                        <Text>2_1</Text>
-                    
-                    </TouchableOpacity>
-
-                    <TouchableOpacity style={styles.box_2_2} onPress={() => navigation.navigate('Skills')}>
-                    
-                        <Text>2_2</Text>
-                    
-                    </TouchableOpacity>
-                </View>
-                
-            </View>
-
-            <View style={styles.right_large_box}>
-                <TouchableOpacity  style={styles.box_3} onPress={() => navigation.navigate('Career')}> 
-                
-                    <Text>3</Text>
-                
-                </TouchableOpacity>
-
-                <TouchableOpacity style={styles.box_4} onPress={() => navigation.navigate('Projects_info')}>
-                
-                    <Text>4</Text>
-                
-                </TouchableOpacity>
-            </View>
+            <View style={{width : parentWidth, height : parentWidth/192*108, flexDirection:'row',}}>
+            
+            <Image
+                style={{  width : parentWidth/1920*884, height : parentWidth/192*86, marginRight : -parentWidth/1920*614}}
+                source={require('../image/main_1.png')}
+            />
             
             
-        </View>
+            
+            <Image
+                style={{  width : parentWidth/1920*912, height : parentWidth/192*69,marginRight : -parentWidth/1920*424 }}
+                source={require('../image/main_2.png')}
+            />
+            
+            
+            <Image
+                style={{ zIndex:1, width : parentWidth/1920*737, height : parentWidth/192*86,marginRight : -parentWidth/1920*146 }}
+                source={require('../image/main_3.png')}
+            />
+
+            <Image
+                style={{ zIndex:1, width : parentWidth/1920*565, height : parentWidth/192*86, }}
+                source={require('../image/main_4.png')}
+            />      
+            
+            
+
+            </View>
+
+                <TouchableOpacity>
+                    <Text style={{
+                        fontFamily: 'NotoSansKR_500Medium',
+                        position : 'absolute', 
+                        includeFontPadding: false,
+                        //lineHeight : parentWidth/10,
+                        fontSize: parentWidth/10,
+                        color : 'white',
+                        //marginRight : -500,
+                        marginTop : -parentWidth/2.3,
+                        marginLeft : parentWidth/1920*200,
+                        zIndex : 1,
+                        //backgroundColor : 'red',
+                        //padding : 50,
+                        }}>
+                        R
+                    </Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity>
+                    <Text style={{
+                        fontFamily: 'NotoSansKR_500Medium',
+                        position : 'absolute', 
+                        includeFontPadding: false,
+                        fontSize: parentWidth/10,
+                        color : 'white',
+                        //marginRight : -500,
+                        marginTop : -parentWidth/2.3,
+                        marginLeft : parentWidth/1920*698,
+                        zIndex : 1,
+                        //padding : 50,
+                        }}>
+                        Y
+                    </Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity>
+                    <Text style={{
+                        fontFamily: 'NotoSansKR_500Medium',
+                        position : 'absolute', 
+                        includeFontPadding: false,
+                        fontSize: parentWidth/10,
+                        color : 'white',
+                        //marginRight : -500,
+                        marginTop : -parentWidth/2.3,
+                        marginLeft : parentWidth/1920*1120,
+                        zIndex : 1,
+                        //padding : 50,
+                        }}>
+                        U
+                    </Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity>
+                    <Text style={{
+                        fontFamily: 'NotoSansKR_500Medium',
+                        position : 'absolute', 
+                        includeFontPadding: false,
+                        fontSize: parentWidth/10,
+                        color : 'white',
+                        //marginRight : -500,
+                        marginTop : -parentWidth/2.3,
+                        marginLeft : parentWidth/1920*1600,
+                        zIndex : 1,
+                        //padding : 50,
+                        }}>
+                        L
+                    </Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity>
+                    <Text style={{
+                        fontFamily: 'NotoSansKR_500Medium',
+                        position : 'absolute', 
+                        includeFontPadding: false,
+                        fontSize: parentWidth/40,
+                        color : 'white',
+                        lineHeight : parentWidth/30,
+                        //marginRight : -500,
+                        marginTop : -parentWidth/3.5,
+                        marginLeft : parentWidth/1920*215,
+                        zIndex : 1,
+                        //backgroundColor : 'red',
+                        //padding : 50,
+                        }}>
+                        E{'\n'}A{'\n'}D  about me
+                    </Text>
+                </TouchableOpacity>
         </View>
         )
     
@@ -82,11 +148,8 @@ const styles = StyleSheet.create({
         //alignItems: 'center',
         //backgroundColor : 'red',
         //height : hp('100%'),
-        flexDirection : 'row',
-        marginLeft : wp('5%'),
-        marginRight : wp('5%'),
-        marginTop : wp('1%'),
-        marginBottom : wp('1%'),
+        backgroundColor : 'black'
+        
     }, 
     left_large_box : {
         //backgroundColor : 'black',

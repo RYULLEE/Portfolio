@@ -31,17 +31,10 @@ const TestStack = createStackNavigator(
     },
     {
         initialRouteName: 'Ryul_Portfolio',
-        screenOptions: {
-            headerStyle: {
-              elevation: 0,
-              shadowOpacity: 0,
-              
-            },
-            headerTitle: '회원가입',
-          },
-          options : {
-            headerTitle: '회원가입',
-          }
+        
+        
+        
+          
     }
 );
 

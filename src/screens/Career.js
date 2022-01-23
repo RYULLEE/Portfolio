@@ -307,7 +307,20 @@ const Career = ({navigation}) => {
           </View>
         </TouchableOpacity>
 
-        
+        <View style={{flexDirection:'row'}}>
+          <TouchableOpacity>
+          <Image
+            style={{width: parentWidth/5, height: parentWidth/5*1.4, marginRight : -100 }}
+            source={require('../image/puzzle_1.png')}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity>
+          <Image
+            style={{width: parentWidth/5, height: parentWidth/5*1.4 }}
+            source={require('../image/puzzle_2.png')}
+            />
+          </TouchableOpacity>
+        </View>
 
         </View>
 
