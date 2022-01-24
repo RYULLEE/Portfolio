@@ -8,6 +8,9 @@ import * as Animatable from 'react-native-animatable';
 import Snowflakes from 'react-native-snowflakes';
 import { useState, useEffect } from 'react';
 //MyCustomComponent = Animatable.createAnimatableComponent(MyCustomComponent);
+import DotAnimation from './DotAnimation';
+import Dot from './Dot';
+import Dot_image from './Dot_image';
 
 const Profile = ({navigation}) => {
 
@@ -21,8 +24,9 @@ const Profile = ({navigation}) => {
         <View style={styles.container} onLayout={onLayout}>
             <View style={{width : parentWidth, height : parentWidth/192*108, flexDirection:'row',}}>
             
+            
             <Image
-                style={{  width : parentWidth/1920*884, height : parentWidth/192*86, marginRight : -parentWidth/1920*614}}
+                style={{ tintColor : 'black', width : parentWidth/1920*884, height : parentWidth/192*86, marginRight : -parentWidth/1920*614}}
                 source={require('../image/main_1.png')}
             />
             
@@ -48,75 +52,7 @@ const Profile = ({navigation}) => {
 
             </View>
 
-                <TouchableOpacity>
-                    <Text style={{
-                        fontFamily: 'NotoSansKR_500Medium',
-                        position : 'absolute', 
-                        includeFontPadding: false,
-                        //lineHeight : parentWidth/10,
-                        fontSize: parentWidth/10,
-                        color : 'white',
-                        //marginRight : -500,
-                        marginTop : -parentWidth/2.3,
-                        marginLeft : parentWidth/1920*200,
-                        zIndex : 1,
-                        //backgroundColor : 'red',
-                        //padding : 50,
-                        }}>
-                        R
-                    </Text>
-                </TouchableOpacity>
-
-                <TouchableOpacity>
-                    <Text style={{
-                        fontFamily: 'NotoSansKR_500Medium',
-                        position : 'absolute', 
-                        includeFontPadding: false,
-                        fontSize: parentWidth/10,
-                        color : 'white',
-                        //marginRight : -500,
-                        marginTop : -parentWidth/2.3,
-                        marginLeft : parentWidth/1920*698,
-                        zIndex : 1,
-                        //padding : 50,
-                        }}>
-                        Y
-                    </Text>
-                </TouchableOpacity>
-
-                <TouchableOpacity>
-                    <Text style={{
-                        fontFamily: 'NotoSansKR_500Medium',
-                        position : 'absolute', 
-                        includeFontPadding: false,
-                        fontSize: parentWidth/10,
-                        color : 'white',
-                        //marginRight : -500,
-                        marginTop : -parentWidth/2.3,
-                        marginLeft : parentWidth/1920*1120,
-                        zIndex : 1,
-                        //padding : 50,
-                        }}>
-                        U
-                    </Text>
-                </TouchableOpacity>
-
-                <TouchableOpacity>
-                    <Text style={{
-                        fontFamily: 'NotoSansKR_500Medium',
-                        position : 'absolute', 
-                        includeFontPadding: false,
-                        fontSize: parentWidth/10,
-                        color : 'white',
-                        //marginRight : -500,
-                        marginTop : -parentWidth/2.3,
-                        marginLeft : parentWidth/1920*1600,
-                        zIndex : 1,
-                        //padding : 50,
-                        }}>
-                        L
-                    </Text>
-                </TouchableOpacity>
+                
 
                 <TouchableOpacity>
                     <Text style={{
@@ -136,12 +72,45 @@ const Profile = ({navigation}) => {
                         E{'\n'}A{'\n'}D  about me
                     </Text>
                 </TouchableOpacity>
+                
+                <Animated.View style={styles.wrapper}>
+                    <Dot_image _color={'#392525'} delay={0} url={require('../image/main_1.png')} _width = {parentWidth/1920*884} _height ={parentWidth/192*86} marginRight= {-parentWidth/1920*614} />
+                    <Dot_image delay={600} url={require('../image/main_1.png')} />
+                </Animated.View>
+
+                <Animated.View style={styles.wrapper}>
+                    <TouchableOpacity style={{marginTop : parentWidth/1920*240,
+                        marginLeft : parentWidth/1920*200,
+                        zIndex : 1,}}>
+                        <Dot word={'R'} size={parentWidth/10}/>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity style={{marginTop : parentWidth/1920*240, marginLeft : parentWidth/1920*370,}}>
+                        <Dot delay={600} word={'Y'} size={parentWidth/10}/>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity style={{marginTop : parentWidth/1920*240, marginLeft : parentWidth/1920*318,}}>
+                        <Dot delay={1200} word={'U'} size={parentWidth/10}/>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity style={{marginTop : parentWidth/1920*240, marginLeft : parentWidth/1920*340,}}>
+                        <Dot delay={1800} word={'L'} size={parentWidth/10}/>
+                    </TouchableOpacity>
+                </Animated.View>
+
+                
         </View>
         )
     
 }
 
 const styles = StyleSheet.create({
+    wrapper: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position : 'absolute'
+      },
     container: {
         flex:1,
         //justifyContent: 'center',
