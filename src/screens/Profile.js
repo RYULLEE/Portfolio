@@ -33,18 +33,18 @@ const Profile = ({navigation}) => {
             
             
             <Image
-                style={{  width : parentWidth/1920*912, height : parentWidth/192*69,marginRight : -parentWidth/1920*424 }}
+                style={{ tintColor : 'black', width : parentWidth/1920*912, height : parentWidth/192*69,marginRight : -parentWidth/1920*424 }}
                 source={require('../image/main_2.png')}
             />
             
             
             <Image
-                style={{ zIndex:1, width : parentWidth/1920*737, height : parentWidth/192*86,marginRight : -parentWidth/1920*146 }}
+                style={{tintColor : 'black', zIndex:1, width : parentWidth/1920*737, height : parentWidth/192*86,marginRight : -parentWidth/1920*146 }}
                 source={require('../image/main_3.png')}
             />
 
             <Image
-                style={{ zIndex:1, width : parentWidth/1920*565, height : parentWidth/192*86, }}
+                style={{ tintColor : 'black',zIndex:1, width : parentWidth/1920*565, height : parentWidth/192*86, }}
                 source={require('../image/main_4.png')}
             />      
             
@@ -59,13 +59,13 @@ const Profile = ({navigation}) => {
                         fontFamily: 'NotoSansKR_500Medium',
                         position : 'absolute', 
                         includeFontPadding: false,
-                        fontSize: parentWidth/40,
+                        fontSize: parentWidth/60,
                         color : 'white',
                         lineHeight : parentWidth/30,
                         //marginRight : -500,
                         marginTop : -parentWidth/3.5,
                         marginLeft : parentWidth/1920*215,
-                        zIndex : 1,
+                        zIndex : 2,
                         //backgroundColor : 'red',
                         //padding : 50,
                         }}>
@@ -74,8 +74,10 @@ const Profile = ({navigation}) => {
                 </TouchableOpacity>
                 
                 <Animated.View style={styles.wrapper}>
-                    <Dot_image _color={'#392525'} delay={0} url={require('../image/main_1.png')} _width = {parentWidth/1920*884} _height ={parentWidth/192*86} marginRight= {-parentWidth/1920*614} />
-                    <Dot_image delay={600} url={require('../image/main_1.png')} />
+                    <Dot_image _color={'#392525'} delay={0} url={require('../image/main_1.png')} _width = {parentWidth/1920*884} _height ={parentWidth/192*86} _marginRight= {-parentWidth/1920*614} />
+                    <Dot_image _color={'#182115'} delay={600} url={require('../image/main_2.png')} _width = {parentWidth/1920*912} _height ={parentWidth/192*69} _marginRight= {-parentWidth/1920*424} _marginTop={-parentWidth/1920*175} />
+                    <Dot_image _color={'#1C1C05'} delay={1200} url={require('../image/main_3.png')} _width = {parentWidth/1920*737} _height ={parentWidth/192*86} _marginRight= {-parentWidth/1920*146} _marginTop={0} />
+                    <Dot_image _color={'#1D253B'} delay={1800} url={require('../image/main_4.png')} _width = {parentWidth/1920*565} _height ={parentWidth/192*86} _marginRight= {0} _marginTop={0} />
                 </Animated.View>
 
                 <Animated.View style={styles.wrapper}>

@@ -11,7 +11,7 @@ const Dot = ({ marginRight = 0, delay = 0, word = '', size=0, }) => {
       Animated.loop(
         Animated.timing(dotColor, {
           toValue: 1,
-          duration: 2000
+          duration: 4000
         })
       )
     ]).start();
@@ -19,7 +19,7 @@ const Dot = ({ marginRight = 0, delay = 0, word = '', size=0, }) => {
 
   const dotInterpolate = dotColor.interpolate({
     inputRange: [0, .1, .9, 1],
-    outputRange: ['rgb(0, 0, 0)', 'rgb(230, 230, 230)', 'rgb(230, 230, 230)', 'rgb(0, 0, 0)']
+    outputRange: ['rgb(230, 230, 230)', 'rgb(0, 0, 0)','rgb(0, 0, 0)', 'rgb(230, 230, 230)', ]
   });
 
   return (

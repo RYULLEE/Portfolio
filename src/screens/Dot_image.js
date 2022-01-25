@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Animated, StyleSheet } from "react-native";
 import { Button,useWindowDimensions, TouchableOpacity, Image, View, Text, FlatList, Touchable } from 'react-native';
 
-const Dot_image = ({ _marginRight = 0,_marginLeft=0, delay = 0, _width=0, _height=0,url='',_color='', }) => {
+const Dot_image = ({ _marginRight = 0,_marginLeft=0, delay = 0, _width=0, _height=0,url='',_color='',_marginTop=0, }) => {
   const [dotColor, setDotColor] = useState(new Animated.Value(0));
 
   useEffect(() => {
@@ -11,15 +11,15 @@ const Dot_image = ({ _marginRight = 0,_marginLeft=0, delay = 0, _width=0, _heigh
       Animated.loop(
         Animated.timing(dotColor, {
           toValue: 1,
-          duration: 2000
+          duration: 4000
         })
       )
     ]).start();
   }, []);
 
   const dotInterpolate = dotColor.interpolate({
-    inputRange: [0, .1, .9, 1],
-    outputRange: [0, .1, .9, 1]
+    inputRange: [0, .2, .4, .6,.8, 1],
+    outputRange: [0, .5, 1, 1,.5, 0]
   });
 
   return (
@@ -27,6 +27,7 @@ const Dot_image = ({ _marginRight = 0,_marginLeft=0, delay = 0, _width=0, _heigh
     <Animated.Image style={{opacity: dotInterpolate,
       tintColor : _color,
       marginRight: _marginRight,
+      marginTop : _marginTop,
       width : _width,
       height : _height,
       
