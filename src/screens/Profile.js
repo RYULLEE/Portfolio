@@ -344,68 +344,81 @@ const Profile = ({navigation}) => {
                                     width : parentWidth/1920*300, height : parentWidth/1920*800, marginTop : -parentWidth/1920*1050}}
         onMouseEnter={() => setMouse_1(true)}
         onMouseLeave={() => setMouse_1(false)}
+        onPress={() => navigation.navigate('Aboutme')}
         />
         <TouchableOpacity style={{//backgroundColor : 'blue', 
                                     width : parentWidth/1920*200, height : parentWidth/1920*700, marginTop : -parentWidth/1920*700, marginLeft :parentWidth/1920*300 }}
         onMouseEnter={() => setMouse_1(true)}
         onMouseLeave={() => setMouse_1(false)}
+        onPress={() => navigation.navigate('Aboutme')}
         />
         <TouchableOpacity style={{//backgroundColor : 'red', 
                                     width : parentWidth/1920*200, height : parentWidth/1920*350, marginTop : -parentWidth/1920*350, marginLeft :parentWidth/1920*500 }}
         onMouseEnter={() => setMouse_1(true)}
         onMouseLeave={() => setMouse_1(false)}
+        onPress={() => navigation.navigate('Aboutme')}
         />
         <TouchableOpacity style={{//backgroundColor : 'green', 
                                     width : parentWidth/1920*200, height : parentWidth/1920*300, marginTop : -parentWidth/1920*850, marginLeft :parentWidth/1920*400 }}
         onMouseEnter={() => setMouse_2(true)}
         onMouseLeave={() => setMouse_2(false)}
+        onPress={() => navigation.navigate('Skills')}
         />
         <TouchableOpacity style={{//backgroundColor : 'green', 
                                     width : parentWidth/1920*200, height : parentWidth/1920*700, marginTop : -parentWidth/1920*550, marginLeft :parentWidth/1920*550 }}
         onMouseEnter={() => setMouse_2(true)}
         onMouseLeave={() => setMouse_2(false)}
+        onPress={() => navigation.navigate('Skills')}
         />
         <TouchableOpacity style={{//backgroundColor : 'green', 
                                     width : parentWidth/1920*200, height : parentWidth/1920*700, marginTop : -parentWidth/1920*700, marginLeft :parentWidth/1920*750 }}
         onMouseEnter={() => setMouse_2(true)}
         onMouseLeave={() => setMouse_2(false)}
+        onPress={() => navigation.navigate('Skills')}
         />
         <TouchableOpacity style={{//backgroundColor : 'green',
                                     width : parentWidth/1920*200, height : parentWidth/1920*700, marginTop : -parentWidth/1920*500, marginLeft :parentWidth/1920*650 }}
         onMouseEnter={() => setMouse_2(true)}
         onMouseLeave={() => setMouse_2(false)}
+        onPress={() => navigation.navigate('Skills')}
         />
         <TouchableOpacity style={{//backgroundColor : 'green', 
                                     width : parentWidth/1920*200, height : parentWidth/1920*500, marginTop : -parentWidth/1920*900, marginLeft :parentWidth/1920*900 }}
         onMouseEnter={() => setMouse_2(true)}
         onMouseLeave={() => setMouse_2(false)}
+        onPress={() => navigation.navigate('Skills')}
         />
         <TouchableOpacity style={{//backgroundColor : 'red', 
                                     width : parentWidth/1920*200, height : parentWidth/1920*500, marginTop : parentWidth/1920*120, marginLeft :parentWidth/1920*900 }}
         onMouseEnter={() => setMouse_3(true)}
         onMouseLeave={() => setMouse_3(false)}
+        onPress={() => navigation.navigate('Projects_info')}
         />
         <TouchableOpacity style={{//backgroundColor : 'red', 
                                     width : parentWidth/1920*200, height : parentWidth/1920*750, marginTop : -parentWidth/1920*750, marginLeft :parentWidth/1920*1050 }}
         onMouseEnter={() => setMouse_3(true)}
         onMouseLeave={() => setMouse_3(false)}
+        onPress={() => navigation.navigate('Projects_info')}
         />
         <TouchableOpacity style={{//backgroundColor : 'red', 
                                     width : parentWidth/1920*200, height : parentWidth/1920*750, marginTop : -parentWidth/1920*750, marginLeft :parentWidth/1920*1250 }}
         onMouseEnter={() => setMouse_3(true)}
         onMouseLeave={() => setMouse_3(false)}
+        onPress={() => navigation.navigate('Projects_info')}
         />
 
         <TouchableOpacity style={{//backgroundColor : 'blue', 
                                     width : parentWidth/1920*400, height : parentWidth/1920*900, marginTop : -parentWidth/1920*900, marginLeft :parentWidth/1920*1500 }}
         onMouseEnter={() => setMouse_4(true)}
         onMouseLeave={() => setMouse_4(false)}
+        onPress={() => navigation.navigate('Career')}
         />
 
         <TouchableOpacity style={{//backgroundColor : 'blue', 
                                     width : parentWidth/1920*200, height : parentWidth/1920*600, marginTop : -parentWidth/1920*900, marginLeft :parentWidth/1920*1430 }}
         onMouseEnter={() => setMouse_4(true)}
         onMouseLeave={() => setMouse_4(false)}
+        onPress={() => navigation.navigate('Career')}
         />
         
                 

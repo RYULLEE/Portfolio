@@ -218,7 +218,7 @@ const Projects_1 = ({navigation}) => {
                     {'\n'}
                     {'\n'}
                     직접 처음부터 모든걸 해보니 스타트업은 정말 본인의 물음에 답을 찾는 과정이였습니다. Lean Canvas부터 시작하여 target 고객의 needs와 feedback을 발로 뛰면서 조사하고 듣는 Customer Discovery, 직접 투자자들 앞에서 발표하는 Pitch Deck 과정을 수행하였습니다.  
-                    Bluepoint Partners의 멘토링과 kakao ventures, the ventures등 다양한 투자 심의를 거치며 거의 2년이란은 시간속에서 스타트업의 고충과 세상을 보는 Insight, 창업가로써의 성장과정을 직접 느낄 수 있었습니다. 
+                    Bluepoint Partners의 멘토링과 kakao ventures, the ventures등 다양한 투자 심의를 거치며 거의 2년이라는 시간속에서 스타트업의 고충과 세상을 보는 Insight, 창업가로써의 성장과정을 직접 느낄 수 있었습니다. 
                     {'\n'}
                     {'\n'}
                     {'\n'}

@@ -16,9 +16,27 @@ import Career from '../screens/Career';
 
 const TestStack = createStackNavigator(
     {
-        Home: Home,
+        Home: {
+            screen : Home,
+            
+            navigationOptions : {
+                headerShown : false
+            }
+        },
         Feed: Feed,
-        Ryul_Portfolio : Profile,
+        Ryul_Portfolio : {
+            screen : Profile,
+            navigationOptions : {
+                title : '',
+                headerStyle : {
+                    backgroundColor : 'black',
+                    
+                    borderBottomColor : 'black',
+                    height : 20,
+                },
+                //headerShown : false,
+            }
+        },
         Aboutme : Aboutme,
         Skills : Skills,
         Snap : Snap,
