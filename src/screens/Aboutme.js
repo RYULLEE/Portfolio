@@ -22,7 +22,7 @@ const Aboutme = ({navigation}) => {
         
             <View style={styles.large_container} onLayout={onLayout}>
 
-                <View style={{width : parentWidth/1.5, height :parentWidth/1.5/43*25, backgroundColor : 'white',  }}>
+                <View style={{width : parentWidth/1.5/1.1, height :parentWidth/1.5/43*25/1.1, backgroundColor : 'white',  }}>
                 
                 <View style={styles.top_card}>
                     <Text style={{
@@ -68,7 +68,7 @@ const Aboutme = ({navigation}) => {
                                         fontSize: parentWidth/90,
                                         color : '#6E6E6E',
                                         }}>
-                                        이률</Text>
+                                        이 률</Text>
                                 </View>
                             </View>
 

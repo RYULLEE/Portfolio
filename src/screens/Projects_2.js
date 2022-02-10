@@ -77,7 +77,7 @@ const Projects_2 = ({navigation}) => {
                     </View>
                     <View style={{flex:2, }}>
                         <Text style={styles.text_left_2}>
-                        링크 넣자
+                        
                         </Text> 
                     </View>
                 </View>

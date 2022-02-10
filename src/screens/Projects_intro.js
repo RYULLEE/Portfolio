@@ -88,7 +88,7 @@ const Projects_info =({navigation})=> {
                       
                       </TouchableOpacity>
                   </Swiper>
-                  <Text>{parentWidth}</Text>
+                  
                               
               </View>
               
